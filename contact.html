@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>café florette</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel ="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap">
+</head>
+
+<body>
+    <header>
+        <h1><a href="./index.html">Café florette</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="plan.html">Nous trouver</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contact">
+        <div class="container-contact">
+            <h2 class="underline">Une question? Contactez nous</h2>
+            <form method="post">
+                <label>Nom</label>
+                <input type="text" name="nom" required>
+                <label>Email</label>
+                <input type="email" name="email" required>
+                <label>Questions et remarques</label>
+                <textarea name="message" required></textarea>
+                <a href="" class="btn btn-primaire">SOUMETTRE</a>
+            </form>
+        </div>
+    </section>
+</body>
+<footer>
+    <p>Copyright &copy; - florette - 2019</p>
+</footer>
+</html>
