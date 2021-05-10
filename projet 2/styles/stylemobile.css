@@ -1,0 +1,294 @@
+/* Normalise css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titre {
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: #eee;
+    color: #333;
+}
+
+header{
+    padding: 1rem 2rem;
+    background: #333;
+    display: flex;
+    flex-flow: column;
+    line-height: 1.8rem;
+    text-align: center;
+}
+
+.logo {
+    margin-bottom: 0;
+    font-family: "Long Cang";
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+header > div > i {
+    color: #f1c40f;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+header > div > h1 {
+    margin-bottom: 0;
+    font-family: "Long Cang";
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    color: white;
+}
+
+header ul {
+    display: flex;
+    flex-flow: column nowrap;
+    list-style: none;
+    text-align: center;
+}
+
+header > nav > ul > li {
+    padding: 0.4rem;
+    border-bottom: 1px dotted white;
+}
+
+header > nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background: url(img/images/frame.jpg) center center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.hero > div {
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    margin: auto;
+}
+
+.hero > div > h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+.hero > div > p {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+span {
+    color: #f1c40f;
+    font-weight: 400;
+}
+
+.separateur {
+    margin: 1rem auto;
+    height: 2px;
+    width: 50px;
+    background: #333;
+}
+
+/*section offre*/
+
+.offre {
+    padding: 1rem;
+    display: block;
+    margin: 6rem;
+}
+.conteneur-offre{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.element-offre {
+    border: 1px solid #ddd;
+    background: white;
+    margin: 1rem;
+    flex: 1;
+    text-align: center;
+}
+
+.image-offre {
+    width: 100%;
+}
+
+.element-offre > p {
+    margin: 2rem;
+}
+
+.offre > h3 {
+    margin: 1rem;
+    margin-bottom: 3rem;
+}
+
+/* section equipe */
+
+.equipe {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+}
+
+.image-equipe {
+    flex: 1;
+    background: url(img/images/team.jpg) center center;
+    background-size: cover;
+    min-height: 300px;
+}
+
+.image-equipe > img {
+    width: 100%;
+}
+
+.contenu-equipe {
+    flex: 1;
+    padding: 2rem;
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    padding: 2rem;
+    text-align: left;
+}
+
+.contenu-equipe > h3 {
+    text-align: left;
+    line-height: 2rem;
+}
+
+/* section avis */
+
+.conteneur-avis {
+    display: block;
+    margin: auto;
+}
+
+.avis {
+    padding: 2rem 1rem;
+    margin: 6rem;
+}
+
+.contenu-avis{
+    display:flex;
+    flex-direction: column;
+}
+
+.element-avis{
+    flex: 1;
+    background: white;
+    border-radius: 5px;
+    padding: 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.element-avis-2{
+    flex: 1;
+    background: white;
+    border-radius: 5px;
+    padding: 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.profil-avis > img{
+    border-radius: 100%;
+    width: 70px;
+    margin: 1rem 2rem;
+    display: block;
+    margin: 2rem auto;
+}
+
+.profil-avis > p:nth-child(3) {
+    font-style: italic;
+}
+
+.texte-avis, .profil-avis > p{
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 0.5rem 2rem;
+}
+
+.profil-avis > p{
+    text-align: left;
+    margin: auto;
+}
+
+/* section contact */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 5rem 1rem;
+}
+  
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+}
+  
+.contact-form input {
+    background: #333;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 0;
+    border-bottom: 2px solid #444;    
+}
+  
+.contact-form button {
+    display: block;
+    margin: 3rem auto;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    background: #f1c40f;
+    color: white;
+    font-weight: 700;
+    font-size: 1.3rem;
+    border: 0;    
+}
+  
+
+/* footer */
+  
+footer {
+    background: #444;
+    color: white;
+    text-align: center;
+    padding: 4rem;
+}
+  

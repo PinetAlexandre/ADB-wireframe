@@ -1,0 +1,35 @@
+Pour inclure un fichier spécifique pour votre format mobile, voici un exemple;
+
+
+<link rel="stylesheet"
+media="only screen and (max-width: 500px)
+href="./css/style.mobile.css"
+/>
+
+Font-Family:
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Long+Cang|Montserrat:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+
+dans le fichier css, vous appelez les polices:
+
+  font-family: "Montserrat", sans-serif;
+  font-family: "Long Cang", cursive;
+
+Les icônes: (n'oubliez pas de linker le scrip font awesome
+
+la couronne
+<i class="fas fa-crown"></i>
+
+Double quote gauche 
+<i class="fas fa-quote-left"></i>
+
+Double quote droit
+<i class="fas fa-quote-right"></i>
+
+Couleur:
+Or: #f1c40f;
+#333
+#444
