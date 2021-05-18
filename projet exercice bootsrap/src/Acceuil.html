@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex bootstrap</title>
+
+    <link rel="stylesheet" href ="./src/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/83f4286022.js" crossorigin="anonymous"></script>
+</head>
+<header>
+</header>
+
+    <nav class="navbar sticky-top navbar-transparent bg-transparent">
+        <div class="container-fluid">
+
+            <a class="navbar-brand text-white" href="Acceuil.html"> <i class="fas fa-space-shuttle fa-flip-horizontal"></i> Hello from Space <i class="fas fa-space-shuttle"></i></a>
+
+            <ul class="nav nav-tabs">
+
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Acceuil.html">Acceuil</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Contact.php">Contact</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="Produits.html" role="button" aria-expanded="false">Produits</a>
+                    <ul class="dropdown-menu">
+                        <li>Classe Eco</li>
+                        <li><a class="dropdown-item" href="Produits.html">Lune Eco</a></li>
+                        <li><a class="dropdown-item" href="Produits.html">Mars Eco</a></li>
+                        <li><a class="dropdown-item" href="Produits.html">Jupiter Eco</a></li>
+                        <li><a class="dropdown-item" href="Produits.html">Soleil Eco</a></li>
+                        <li><hr class="dropdown-divider" >Classe Standard</li>
+                        <li><a class="dropdown-item" href="Produits.html">Lune Standard</a></li>
+                        <li><a class="dropdown-item" href="Produits.html">Mars Standard</a></li>
+                        <li><a class="dropdown-item" href="Produits.html">Jupiter Standard</a></li>
+                        <li><a class="dropdown-item" href="Produits.html">Soleil Standard</a></li>
+                        <li><hr class="dropdown-divider" >Classe VIP</li>
+                        <li><a class="dropdown-item" href="Produits.html">Lune VIP</a></li>
+                        <li><a class="dropdown-item" href="Produits.html">Mars VIP</a></li>
+                        <li><a class="dropdown-item" href="Produits.html">Jupiter VIP</a></li>
+                        <li><a class="dropdown-item" href="Produits.html">Soleil VIP</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Photos.html">Photos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Nous trouver.html">Nous trouver</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    
+
+
+<body class="bg-dark">
+    <div class="jumbotron bg-dark p-0 m-0">
+        <video class="min-vh-100 min-vw-100" autoplay muted loop>
+            <source src="http://monbootstrap.fr/wp-content/uploads/2020/04/View-of-Earth-at-Night-from-Space.mp4" type="video/mp4">
+        </video>
+        <div class="card-img-overlay d-flex h-50 flex-column my-auto align-items-center justify-content-center text-center text-white">
+            <h1 class="display-3">Hello from Space</h1>
+            <p class="lead">L'unique et meilleure agence de voyage spatial de toute la galaxie</p>
+            <a class="btn btn-light btn-lg" href="#decouvrir" role="button"><i class="fas fa-space-shuttle"></i> Découvrir</a>
+      </div>
+    </div>
+
+    
+    <section class="bg-dark my-4" id="decouvrir">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-user-astronaut text-dark fa-2x"></i>
+                            <h4 class="text-uppercase m-0">Equipement</h4>
+                            <hr class="my-4" />
+                            <div class="small text-black-50">Nous mettons à votre disposition des combinaisons suivant les dernières tendances et des véhicules à la pointe de la technologie</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-moon text-dark fa-2x"></i>
+                            <h4 class="text-uppercase m-0">Décrochez la lune</h4>
+                            <hr class="my-4" />
+                            <div class="small text-black-50">Nos destinations vous permettrons d'avoir la tête dans les étoiles, atteindre le septième ciel et peut être même décrocher la lune !</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-journal-whills text-dark fa-2x"></i>
+                            <h4 class="text-uppercase m-0">3 étoiles au Guide des Whills</h4>
+                            <hr class="my-4" />
+                            <div class="small text-black-50">Nous avons étés classés plusieurs fois 3 étoiles au Guide des Whills et nous sommes certifiés par le Sénat Intergallactic</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-dark">
+        <div class="container rounded bg-light">
+            <div class="row align-items-center">
+                <h2 class=" text-center text-decoration-underline">Actualités</h2>
+                <div class="col-lg-6">
+                    
+                    <div>
+                        <p>C'est un Américain, un Français et un Belge. Ils parlent de leurs projets dans l'espace.</p>
+                        <ul>
+                            <li>L'Américain :
+                                - "Nous, bientôt, on va aller sur la lune."</li>
+                            <li>Le Français répond :
+                                - "Vous êtes nuls ! Nous, on va aller sur Mars, peut-être même sur Jupiter."</li>
+                            <li>Et le Belge:
+                                - "C'est rien du tout ! On va aller sur le soleil !"</li>
+                            <li>L'Américain et le Français :
+                                - "Et comment, elle va fondre ta fusée !"</li>
+                            <li>Le Belge :
+                                - "Mais on est pas cons nous ! On va y aller la nuit !"</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6"><img class="img-fluid rounded" src="C:\Users\alex\Desktop\cours ifapme\ADB\projet exercice bootsrap\src\images\tesla-roadster-in-space.jpg" alt="teslainspace" /></div>
+                <div class="col-md-12"><p class="small text-center">*Disclamer: Hello from Space décline toute responsabilité en cas de collision d'astéroïdes, rencontres extraterrestres et non retour*</p></div>
+            </div>
+    </section>
+
+
+    <footer class="bg-dark">
+        <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Hello from Space 2021</p></div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+</body>
+
+
+</html>

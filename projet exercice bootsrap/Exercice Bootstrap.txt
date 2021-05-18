@@ -1,0 +1,55 @@
+BOOTSTRAP 
+
+Vous venez d'ouvrir une nouvelle franchise de magasins (le produit que vous voulez, avec un minimum de 2 magasins)
+Réalisez un site en 5 page:
+
+- Accueil
+- Contact 
+- Produits
+- photos
+- Nous trouver 
+
+
+Acceuil: 
+la page d'accueil présente votre entreprise:
+- elle contient obligatoirement deux cards présentant brièvement votre concept
+- un emplacement pour les news
+- une vidéo intégrée dans votre site (youtube par exemple)
+
+Contact: contient un fomulaire de contact qui comprendra au minimum
+- nom, prenom, mail, input:select, input:checkbox, textarea
+
+Produit: 
+présenter 12 produits répartis sur plusieurs colonnes et plusieurs lignes.
+les produits comprennent: 1 image, 1 titre, 1 mini-description, 1 prix, 1fake-bouton pour ajouter au panier
+
+photos:
+réaliser un slider qui comprends au minimum 3 photos qui défilent automatiquement.
+pagination sur le slider
+
+Nous trouver:
+Qui comprends l'adress des différents magasins avec horaire d'ouverture, et intégration d'une carte google pour identifier emplacement des magasins
+
+pagination slider =?
+div col/row page noustrouver
+img offres redim 700*400
+1fake-bouton+prix centrer en bas de case ...
+
+changer police
+faire links --> + decouvrir descend ancre + ancre produits
+css externe
+redim video ?
+padding-margin
+active onglets
+ajouter des sections+commentaires
+
+color
+relink video ?
+refaire liste produit dans nav ? + bg-transparent?
+typo+taille+stylesS
+
+renommer page contact en .php
+page form
+condition if si données entrées + else formulaire html
+
+responsive
