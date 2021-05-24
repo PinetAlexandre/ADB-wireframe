@@ -1,15 +1,6 @@
-<?php    
-if(isset($_POST['submit'])) 
-{
-    echo "Success";
-    $input = $_POST['inputText'];
-    echo $input;
-}
-else               
-{
 
-}
-?>
+
+
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -84,21 +75,21 @@ else
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls mb-0 pb-2">
                         <label class="text-white">Nom</label>
-                        <input class="form-control" id="nom" type="text" placeholder="Entrez votre nom" required="required" data-validation-required-message="Entrez votre nom." />
+                        <input class="form-control" name="firstname" value="<?php echo $firstname; ?>" type="text" placeholder="Entrez votre nom" required="required" data-validation-required-message="Entrez votre nom." />
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls mb-0 pb-2">
                         <label class="text-white">Prénom</label>
-                        <input class="form-control" id="prénom" type="text" placeholder="Entrez votre prénom" required="required" data-validation-required-message="Entrez votre prénom." />
+                        <input class="form-control" name="lastname" value="<?php echo $lastname; ?>" type="text" placeholder="Entrez votre prénom" required="required" data-validation-required-message="Entrez votre prénom." />
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls mb-0 pb-2">
                         <label class="text-white">E-mail</label>
-                        <input class="form-control" id="email" type="email" placeholder="E-mail" required="required" data-validation-required-message="Entrez votre adresse E-mail." />
+                        <input class="form-control" name="email" value="<?php echo $email; ?>" type="email" placeholder="E-mail" required="required" data-validation-required-message="Entrez votre adresse E-mail." />
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
@@ -106,34 +97,34 @@ else
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls mb-0 pb-2">
                         <label class="text-white">Message</label>
-                        <textarea class="form-control" id="message" rows="5" placeholder="Votre message..." required="required" data-validation-required-message="Entrez un message."></textarea>
+                        <textarea class="form-control" name="message" value="<?php echo $message; ?>" type="text" rows="5" placeholder="Votre message..." required="required" data-validation-required-message="Entrez un message."></textarea>
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
                     <label for="destination" class="text-white">Choisissez une destination:</label>
                     <select name="destination" id="destination">
                         <option value="">-Veuillez choisir une destination-</option>
-                        <option value="luneeco">Lune Classe Eco</option>
-                        <option value="marseco">Mars Classe Eco</option>
-                        <option value="jupitereco">Jupiter Classe Eco</option>
-                        <option value="soleileco">Soleil Classe Eco</option>
-                        <option value="lunestandard">Lune Classe Standard</option>
-                        <option value="marsstandard">Mars Classe Standard</option>
-                        <option value="jupiterstandard">Jupiter Classe Standard</option>
-                        <option value="soleilstandard">Soleil Classe Standard</option>
-                        <option value="lunevip">Lune Classe VIP</option>
-                        <option value="marsvip">Mars Classe VIP</option>
-                        <option value="jupitervip">Jupiter Classe VIP</option>
-                        <option value="soleilvip">Soleil Classe VIP</option>
+                        <option value="luneeco" <?php echo $destination["luneeco"]; ?>>Lune Classe Eco</option>
+                        <option value="marseco" <?php echo $destination["marseco"]; ?>>Mars Classe Eco</option>
+                        <option value="jupitereco" <?php echo $destination["jupitereco"]; ?>>Jupiter Classe Eco</option>
+                        <option value="soleileco" <?php echo $destination["soleileco"]; ?>>Soleil Classe Eco</option>
+                        <option value="lunestandard" <?php echo $destination["lunestandard"]; ?>>Lune Classe Standard</option>
+                        <option value="marsstandard" <?php echo $destination["marsstandard"]; ?>>Mars Classe Standard</option>
+                        <option value="jupiterstandard" <?php echo $destination["jupiterstandard"]; ?>>Jupiter Classe Standard</option>
+                        <option value="soleilstandard" <?php echo $destination["soleilstandard"]; ?>>Soleil Classe Standard</option>
+                        <option value="lunevip" <?php echo $destination["lunevip"]; ?>>Lune Classe VIP</option>
+                        <option value="marsvip" <?php echo $destination["marsvip"]; ?>>Mars Classe VIP</option>
+                        <option value="jupitervip" <?php echo $destination["jupitervip"]; ?>>Jupiter Classe VIP</option>
+                        <option value="soleilvip" <?php echo $destination["soleilvip"]; ?>>Soleil Classe VIP</option>
                     </select>
                 <fieldset>
                     <legend class="text-white">Veuillez sélectionner le type de voyage</legend>
                     <div>
-                      <input type="checkbox" id="aller" name="typetrajet" value="aller" checked>
+                      <input type="checkbox" name="aller" <?php echo $aller; ?> checked>
                       <label for="aller" class="text-white">Trajet Aller</label>
                     </div>
                     <div>
-                      <input type="checkbox" id="retour" name="typetrajet" value="retour">
+                      <input type="checkbox" name="retour" <?php echo $retour; ?>>
                       <label for="retour" class="text-white">Trajet Retour</label>
                     </div>
                 </fieldset>
@@ -155,5 +146,37 @@ else
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 </body>
 
-
 </html>
+
+
+<?php
+    
+    function getArrayValue(array $array, string $value)
+    {
+    if (isset($array[$value]))
+        return htmlspecialchars ($array[$value]) ;
+    return "";
+    }
+
+$firstname = getArrayValue($_POST, "firstname") FILTER_SANITIZE_STRING;
+$lastname = getArrayValue($_POST, "lastname") FILTER_SANITIZE_STRING;
+$email = getArrayValue($_POST, "email") FILTER_VALIDATE_EMAIL;
+$message = getArrayValue($_POST, "message") FILTER_SANITIZE_STRING;
+
+$destination["luneeco"] = getArrayValue($_POST, "destination") == "luneeco" ? "selected" : "";
+$destination["marseco"] = getArrayValue($_POST, "destination") == "marseco" ? "selected" : "";
+$destination["jupitereco"] = getArrayValue($_POST, "destination") == "jupitereco" ? "selected" : "";
+$destination["soleileco"] = getArrayValue($_POST, "destination") == "soleileco" ? "selected" : "";
+$destination["lunestandard"] = getArrayValue($_POST, "destination") == "lunestandard" ? "selected" : "";
+$destination["marsstandard"] = getArrayValue($_POST, "destination") == "marsstandard" ? "selected" : "";
+$destination["jupiterstandard"] = getArrayValue($_POST, "destination") == "jupiterstandard" ? "selected" : "";
+$destination["soleilstandard"] = getArrayValue($_POST, "destination") == "soleilstandard" ? "selected" : "";
+$destination["lunevip"] = getArrayValue($_POST, "destination") == "lunevip" ? "selected" : "";
+$destination["marsvip"] = getArrayValue($_POST, "destination") == "marsvip" ? "selected" : "";
+$destination["jupitervip"] = getArrayValue($_POST, "destination") == "jupitervip" ? "selected" : "";
+$destination["soleilvip"] = getArrayValue($_POST, "destination") == "soleilvip" ? "selected" : "";
+
+$aller = getArrayValue($_POST, "aller") == true ? "checked" : "";
+$retour = getArrayValue($_POST, "retour") == true ? "checked" : "";
+
+?>
